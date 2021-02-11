@@ -54,7 +54,8 @@ class ProtectedAreas:
         if not zipfile: zipfile = self.zipfile
 
         archive = zipfile.ZipFile(zipfile, 'r')
-        print({i+1: file for i,file in enumerate(archive.namelist())})
+        zip_contents = {i+1: file for i,file in enumerate(archive.namelist())})
+        self.zip_contents = zip_contents
 
         ## prompt to select index i
         ## return input i
