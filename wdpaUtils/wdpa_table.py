@@ -1,26 +1,11 @@
-from .viewer import show
+from datetime import datetime, date
 
 class ProtectedAreas:
-    """
-    This class represents the current WDPA table pulled from Protected Planet.
+    def __init__(self):
+        
+        self.created_date = self.getDate()
 
-    Add the parameters you can pass
-    name:str
-        Vizzuality name
-    role: str
-        Vizzuality role
-    """
-    def __init__(self, name=None, role='No role'):
-        if not name: print('No name provided :(')
-        if not role: print('No role provided :(')
-
-        self.name = name
-        self.role = role
-
-    def __str__(self):
-        return f"{self.name} is a string"
-
-    def __repr__(self):
-        return self.__str__()
-
-    # def change_role(self,new_role):
+    
+    def getDate(date_format= '%Y-%m-%d %H:%M:%S'): 
+        pa_date = datetime.now()
+        return date.strftime(pa_date, '%Y-%m-%d %H:%M:%S')
