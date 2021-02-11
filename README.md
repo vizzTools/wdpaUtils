@@ -1,4 +1,8 @@
-# Python Package Template
+# WDPA Utils
 
-The PyPackage_template package containing a skeleton Python package project to be used as a template for starting development of any type of Python Package destined for upload to PyPI.
-
+This library aims to unite all methods related to the processing of WDPA datasets. For example:  
+- Download the latest WDPA data from source  
+- Automate the preprocessing required to cleaning WDPA raw data
+- Simplify geometries
+- Serve WDPA tiles  
+- Identify changes between 2 WDPA datasets
