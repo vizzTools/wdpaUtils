@@ -1,4 +1,4 @@
-from .viewer import show∫
+from .viewer import show
 
 class Vizz:
     """

@@ -1,4 +1,5 @@
-from .vizzuality import Vizz
+from .wdpa_table import ProtectedAreas
+
 #from pkg_resources import get_distribution
 
 #__version__ = get_distribution('PyPackage-template').version
